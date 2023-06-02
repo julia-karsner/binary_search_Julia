@@ -134,7 +134,7 @@ public class Main extends PApplet {
 
     private int binarySearchIterative(ArrayList<Wrapper> arr, int value){
         int mid = bottom + (top - bottom) / 2;
-        if(arr.get(mid).getState() == States.CHECKED||(location==10 && arr.get(mid).getValue()< value)) {
+        if(arr.get(mid).getState() == States.CHECKED||(location==10 && arr.get(mid).getValue()< value)|| (location==1 && arr.get(mid).getValue()>value)) {
             notInList = true;
             return -1;
 

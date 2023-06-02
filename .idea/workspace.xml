@@ -7,10 +7,7 @@
     <list default="true" id="105e780e-ca28-4c50-a114-4932c7507c78" name="Changes" comment=" Word response function fixed during iterations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/binary_search_Julia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/binary_search_Julia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChangeStates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChangeStates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/States.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +71,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679934517609</updated>
     </task>
+    <task id="LOCAL-00001" summary=" Word response function fixed during iterations">
+      <created>1685665920507</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685665920507</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
