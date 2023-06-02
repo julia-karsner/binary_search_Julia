@@ -6,8 +6,8 @@ public class Wrapper{
     private int w;
     private int h;
     private int value;
-    private CircleStates circleState;
-    private ScrambleStates scrambleState;
+    private States state;
+    private ChangeStates changeState;
 
     public Wrapper(int x, int y, int w, int h, int value){
         this.x = x;
@@ -15,28 +15,40 @@ public class Wrapper{
         this.w = w;
         this.h = h;
         this.value = value;
-        circleState = CircleStates.UNCHECKED;
-        scrambleState = ScrambleStates.NOTTAKEN;
+        state = States.UNCHECKED;
+        changeState = ChangeStates.NOTTAKEN;
     }
 
     public void display(){
-        if(circleState == CircleStates.UNCHECKED) {
-            Main.app.fill(175, 160, 215);
-            Main.app.rect(x-30, y, w, h);
+        if(state == States.UNCHECKED) {
+            Main.app.fill(237, 184, 135);//orginal circle
+            //Main.app.rect(x-30, y, w, h);
+            Main.app.circle(x+3,y+32,w);
             Main.app.fill(242, 246, 250);
-        } else if(circleState == CircleStates.CHECKED){
-            Main.app.fill(242, 246, 250);
-            Main.app.rect(x-30, y, w, h);
-            Main.app.fill(175, 160, 215);
+        } else if(state == States.CHECKED){
+            Main.app.fill(175, 240, 195);//after opened with key n
+           // Main.app.rect(x-30, y, w, h);
+            Main.app.circle(x+3,y+32,w);
+            Main.app.fill(237, 107, 146);
         } else {
-            Main.app.fill(0, 0, 0);
-            Main.app.rect(x-30, y, w, h);
+            Main.app.fill(0, 0, 0);//if circle has target value
+            //Main.app.rect(x-30, y, w, h);
+            Main.app.circle(x+3,y+32,w);
             Main.app.fill(242, 246, 250);
+          //  setupImage("download-14.jpg");
         }
         Main.app.textAlign(PConstants.CENTER, PConstants.CENTER);
         Main.app.textSize(25);
         Main.app.text(value, x+3, y +30);
     }
+
+
+  //  public void display(){
+       // if(state == States.UNCHECKED) {
+      //      a.setupImage("starbucks.png");
+       // }
+
+   // }
     public int getValue(){
         return value;
     }
@@ -44,16 +56,16 @@ public class Wrapper{
     public void setValue(int value){
         this.value = value;
     }
-    public void setCircleState(CircleStates circleState){
-        this.circleState = circleState;
+    public void setCircleState(States state){
+        this.state = state;
     }
-    public CircleStates getCircleState(){
-        return circleState;
+    public States getState(){
+        return state;
     }
-    public void setScrambleState(ScrambleStates scrambleState){
-        this.scrambleState = scrambleState;
+    public void setChangeState(ChangeStates changeState){
+        this.changeState = changeState;
     }
-    public ScrambleStates getScrambleState(){
-        return scrambleState;
+    public ChangeStates getChangeState(){
+        return changeState;
     }
 }

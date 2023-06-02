@@ -1,4 +1,4 @@
-public enum ScrambleStates {
+public enum ChangeStates {
     NOTTAKEN,
 
     TAKEN;

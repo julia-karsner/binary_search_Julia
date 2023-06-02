@@ -1,4 +1,4 @@
-public enum CircleStates {
+public enum States {
     UNCHECKED,
     CHECKED,
     FOUND;
